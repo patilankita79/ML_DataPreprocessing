@@ -55,5 +55,7 @@
     - We don't need to use OneHotEncoder for Purchased variable which is a dependent variable.Since it is a dependent variable ML will know that it is a category and there is no order between the categories of Purchased variable.
     - In R, we use factor function to transform a categorical variable to numeric variable
     
+  6. **Split the dataset into training data and test data**
+    
      
     
