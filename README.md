@@ -19,8 +19,8 @@
 
 ### Pre-processing steps to do to prepare any dataset on which we will build ML model
 
-1. **Get the dataset** 
-    The first step is always to get the dataset and try to understand dataset. Try to figure out what all are independent variables and       what are dependent variables.In ML, some independent variables are used to predict a depedent variable.
+1. **Get the dataset** <br>
+     The first step is always to get the dataset and try to understand dataset. Try to figure out what all are independent variables and       what are dependent variables.In ML, some independent variables are used to predict a depedent variable.
     
     - The name of the dataset I have taken is 'Data.csv'.
     - Dataset contains four columns -> Country, Age, Salary, Purchased. Dataset has total 10 observations.
@@ -33,4 +33,9 @@
         - matplotlib -> to plot nice charts
         - pandas -> to import the dataset and manage the dataset
      - For R, we don't need to import any libraries 
+ 
+ 3. **Import the dataset**
+     - For Python, you have to create the matrix of features and dependent variable vector
+     - Hence for Data.csv, create the matrix of three independent variables and then create the dependent variable vector
+     
     
