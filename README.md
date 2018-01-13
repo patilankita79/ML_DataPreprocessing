@@ -45,5 +45,15 @@
     - In Python, Imputer class from Scikitlearn preprocessing library allows us to take care of missing data
     - In R, we can write ifelse condition to check missing data and take mean of that column if the condition holds true
 
+ 5. **Encode categorical data**
+    - Your dataset may contain quantitative and qualitative variables. Quantitative variables contain numeric values whereas qualitative variables contain the categories or levels within the data
+    - ML models are based on mathematical equations, so it would cause some problem if we keep the text and use categorical variables in the equation because we only want numbers in the equations. That's why we need to encode categorical variables
+    - In 'Data.csv', Country and Purchased are categorical variables because they simply contain categories
+      - *Country* variable contains three categories - France, Spain, Germany
+      - *Purchased* variable contains two categories - yes, no
+    - In Python, categorical data can be encoded using LabelEncoder class for scikit learn preprocessing. Hence, python will give levels to these categories and the order of those levels is not important. But we have to prevent ML equations from thinking one level is greater than other or vice versa. To prevent this, we use dummy variables. So, for example, for Country column, instead of having one column, we will have 3 columns. This can be achieved with the help of OneHotEncoder class
+    - We don't need to use OneHotEncoder for Purchased variable which is a dependent variable.Since it is a dependent variable ML will know that it is a category and there is no order between the categories of Purchased variable.
+    - In R, we use factor function to transform a categorical variable to numeric variable
+    
      
     
