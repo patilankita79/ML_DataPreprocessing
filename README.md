@@ -62,7 +62,13 @@
       - In nutshell, we have to make two different datasets. The training set on which the machine learning model learns and test set on which we test if the ML model learned correctly the correlations
       - In Python, cross-validation class from scikit library is used to split the dataset into training and test set
       - In R, caTools library is used to split the dataset into training and test set
-
+      
+   7. **Feature Scaling**
+       - In the dataset, the variables age and salary are not on the same scale because the Age is ranging from 27 to 50 and Salary is ranging 40k to 90k
+       - We need to have these variables in the same scale otherwise their distance(or Euclidean distance) would be dominated by the variable with high range
+       - Standardization and normalization are two ways of doing feature scaling
+       - In Python, we use StandardScaler class from scikit preprocessing library
+       - In R, we use scale function
 
     
      
