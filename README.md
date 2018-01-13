@@ -38,4 +38,12 @@
      - For Python, you have to create the matrix of features and dependent variable vector
      - Hence for Data.csv, create the matrix of three independent variables and then create the dependent variable vector
      
+ 4. **Dealing with missing data** 
+    - Your dataset may contain missing data. In Data.csv, we can see that there is one missing data in the age column for Spain and one       missing data in salary column for Germany
+    - One way to deal with missing data is to remove the lines of the observaton where there is some missing data but that can be        dangerous because the data set may contain crucial information. So it is quite dangerous to remove observation
+    - Another way to handle missing data is to take the mean of the columns. So in age column where we have missing entry for Spain, we   will replace this missing data by the mean of all the values in the column age
+    - In Python, Imputer class from Scikitlearn preprocessing library allows us to take care of missing data
+    - In R, we can write ifelse condition to check missing data and take mean of that column if the condition holds true
+
+     
     
