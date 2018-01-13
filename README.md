@@ -56,6 +56,14 @@
     - In R, we use factor function to transform a categorical variable to numeric variable
     
   6. **Split the dataset into training data and test data**
+      - ML is about a machine that is going to learn from the data to make predictions
+      - We need to split the dataset into training set and test set. Using training set, we build the machine model and using test set, we test the performance of this machine learning model
+      - We are building our ML model on training set by establishing some correlation between independent variables and dependent variables and once the ML model understands the correlation between independent variables and dependent variables we will test if the ML model can apply the correlations you understood based on training set on test set
+      - In nutshell, we have to make two different datasets. The training set on which the machine learning model learns and test set on which we test if the ML model learned correctly the correlations
+      - In Python, cross-validation class from scikit library is used to split the dataset into training and test set
+      - In R, caTools library is used to split the dataset into training and test set
+
+
     
      
     
